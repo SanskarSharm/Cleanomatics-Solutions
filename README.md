@@ -1,3 +1,24 @@
+# Getting Started with Server
+
+Installing the server dependencies
+This repository contains a package.json file, which is the standard way to tell Node.js some information about the program, including what libraries are needed to run the server code. The server software requires an external library called Express, which makes it easy to develop Web servers.
+
+Run the install command in npm, Node's default package manager:
+
+npm install
+This will read package.json, then look to the NPM package repository to grab the appropriate dependencies.
+
+Run the server
+Run the server script on your development computer:
+
+node server.js
+This will start a long-running process (though you should be able to stop it with Ctrl+C or by closing your terminal window). The server binds to localhost:8000, by default, meaning you should be able to access the web server by visiting http://localhost:8000 in your Web browser.
+
+If you need to change the port or host, the server code will also accept a port number or host from the environment, which looks like this on macOS or Linux:
+
+HOST=0.0.0.0 PORT=3000 node server.js
+This is handy if you already have a process running on port 8000 or if you need to bind to a more public network interface (typically useful if you want to connect to the server from other devices on your network, like a mobile phone).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +89,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+

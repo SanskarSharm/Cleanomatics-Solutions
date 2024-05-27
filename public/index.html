@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Transport Converter</title>
+    <link rel="icon" href="image.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vehicle Transport Converter</h1>
+        <div class="input-section">
+            <label for="distance">Enter Distance (KM):</label>
+            <input type="number" id="distance" min="1">
+        </div>
+        <div class="vehicle-selection">
+            <h2>Select Vehicle</h2>
+            <div class="vehicles">
+                <label><input type="radio" name="vehicle" value="Maruti Suzuki Alto"> Maruti Suzuki Alto</label>
+                <label><input type="radio" name="vehicle" value="Hyundai i20"> Hyundai i20</label>
+                <label><input type="radio" name="vehicle" value="Tata Nexon"> Tata Nexon</label>
+                <label><input type="radio" name="vehicle" value="Honda City"> Honda City</label>
+                <label><input type="radio" name="vehicle" value="Mahindra Thar"> Mahindra Thar</label>
+                <label><input type="radio" name="vehicle" value="Toyota Innova Crysta"> Toyota Innova Crysta</label>
+                <label><input type="radio" name="vehicle" value="Kia Seltos"> Kia Seltos</label>
+                <label><input type="radio" name="vehicle" value="Renault Kwid"> Renault Kwid</label>
+                <label><input type="radio" name="vehicle" value="Ford EcoSport"> Ford EcoSport</label>
+                <label><input type="radio" name="vehicle" value="Tata Tiago"> Tata Tiago</label>
+            </div>
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <div id="results"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
 </html>
